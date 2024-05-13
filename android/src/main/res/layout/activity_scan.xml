@@ -10,6 +10,18 @@
         android:layout_width="match_parent"
         android:layout_height="match_parent" />
 
+<!--    <View-->
+<!--        android:layout_width="match_parent"-->
+<!--        android:layout_height="match_parent"-->
+<!--        android:alpha="0.5"-->
+<!--        android:background="@android:color/black" />-->
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:adjustViewBounds="true"
+        android:scaleType="centerCrop"
+        app:srcCompat="@drawable/ic_overlay_scan" />
+
     <com.sample.edgedetection.view.PaperRectangle
         android:id="@+id/paper_rect"
         android:layout_width="match_parent"
@@ -20,7 +32,7 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_alignParentBottom="true"
-        android:background="@color/colorPrimary"
+        android:background="@color/colorTransparent"
         android:paddingLeft="15dp"
         android:paddingTop="30dp"
         android:paddingRight="15dp"
@@ -36,7 +48,7 @@
             android:padding="12dp"
             app:srcCompat="@drawable/ic_baseline_flash_on_24"
             app:tint="@android:color/white" />
-
+        
         <ImageView
             android:id="@+id/shut"
             android:layout_width="65dp"
@@ -54,6 +66,7 @@
             android:background="@drawable/round_button"
             android:padding="12dp"
             app:srcCompat="@drawable/ic_menu_gallery"
+            android:visibility="gone"
             app:tint="@android:color/white" />
 
     </RelativeLayout>
